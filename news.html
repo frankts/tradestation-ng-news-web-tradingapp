@@ -65,13 +65,13 @@
           </div>
           <hr class="visible-md"/>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 visible-md">
           <p>Mentioned positions...</p>
           <p>
             <button ng-repeat="position in positions" ng-class="{'btn-danger': position.OpenPL < 0}" class="btn btn-success" style="margin-top: 10px; margin-right: 20px; min-width: 150px;" data-toggle="modal" data-target="#myModal" data-symbol="{{position.Symbol}}">{{position.Symbol}} {{position.OpenPL.toFixed(2);}} <span class="glyphicon pull-right" ng-class="{'glyphicon-arrow-down': position.OpenPL < 0, 'glyphicon-arrow-up': position.OpenPL > 0}"></span></button>
           </p>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 visible-md">
           <p>Mentioned symbols...</p>
           <p>
             <button class="btn btn-primary" style="margin-top: 10px; margin-right: 20px; min-width: 90px;" data-toggle="modal" data-target="#myModal">T</button>
